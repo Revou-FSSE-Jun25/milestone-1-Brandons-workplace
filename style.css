@@ -1,0 +1,256 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #1f1f20;
+  color: white;
+  padding: 10px 20px;
+  z-index: 1000;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: white;
+}
+
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-menu li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.navbar-menu li a:hover {
+  color: #ddd;
+}
+
+
+@media (max-width: 768px) {
+  .navbar-menu {
+    display: none;
+    flex-direction: column;
+    background-color: #343a40;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    width: 150px;
+    padding: 10px;
+  }
+
+  .navbar-menu.active {
+    display: flex;
+  }
+}
+
+.intro-section {
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+  width: 100%;
+  padding: 60px 20px;
+  margin-top: 56px;
+}
+
+.intro-container {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.intro-container h1 {
+  font-size: 3em;
+}
+
+.lead {
+  font-size: 1.25em;
+  font-weight: 300;
+  margin-top: 10px;
+}
+
+.aboutMe-section {
+  padding: 60px 0;
+  background-color: #ffffff;
+}
+
+.my-photo {
+    width: 250px;
+    height: 390px;
+}
+
+.container {
+ width: 90%;
+ max-width: 1140ps;
+ margin: 0 auto; 
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.image img{
+  width: 250px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.text {
+  flex: 1;
+  min-width: 250px;
+}
+
+.text h2 {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.section-description {
+  text-align: center;
+  font-size: 1.5em;
+  color: #333;
+  line-height: 1.6;
+}
+
+.about-more p{
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+.about-more li {
+  font-size: 1.3rem;
+  margin-left: 30px;
+}
+
+.about-more h3 {
+  margin-top: 20px;
+  margin-left: 30px;
+  font-size: 2rem;
+}
+
+.project {
+  margin-top: 50px;
+  background-color: #ececec;
+  padding: 60px 20px;
+}
+
+.project-container {
+  display: flex;
+  gap: 100px;
+  /* max-width: 1140px; */
+  margin: 0 auto;
+}
+
+.project-item {
+  text-align: center;
+}
+
+.project-item img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.contact {
+  margin-top: 40px;
+}
+
+.contact h2 {
+  font-size: 2.8rem;
+  text-align: center;
+}
+
+section {
+  text-align: center;
+  align-items: center;
+}
+
+.name input{
+  margin-bottom: 60px;
+  padding: 5px;
+  width: 800px;
+  /* text-align: center; */
+}
+
+.name label {
+  font-size: 1.3rem;
+}
+
+.email label {
+  font-size: 1.3rem;
+}
+
+.pesan label{
+  font-size: 1.3rem;
+}
+
+.email input{
+  justify-content: center;
+  margin-bottom: 60px;
+  padding: 5px;
+  width: 800px;
+  /* text-align: center; */
+}
+
+.pesan textarea{
+  margin-bottom: 50px;
+  padding: 5px;
+  width: 800px;
+  height: 130px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+form {
+  padding: 50px;
+}
+
+button {
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+footer {
+  text-align: center;
+  padding: 16px;
+  background-color: black;
+  color: white;
+}
