@@ -111,12 +111,11 @@ nav ul li a {
 }
 
 /* responsive mobile */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 576px) {
     nav ul {
         display: flex;
         width: 50%;
     }
-}
 
 @media screen and (min-width: 769px) {
     .menu-toggle {
@@ -139,6 +138,10 @@ nav ul li a {
 @media screen and (max-width: 768px) {
     .menu-toggle {
         display: flex;
+    }
+
+    .about-col-2 p {
+        font-size: 1rem !important;
     }
 
     nav ul {
