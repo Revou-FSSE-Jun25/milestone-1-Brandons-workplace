@@ -15,3 +15,17 @@ function opentab(tabName) {
     event.currentTarget.classList.add('active-link');
     document.getElementById(tabName).classList.add('active-tab');
 }
+
+const footer = document.getElementById('footer');
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      footer.style.animation = 'fadeInUp 1s ease-in-out forwards';
+    }
+  });
+}, {
+  threshold: 0.5
+});
+
+observer.observe(footer);
